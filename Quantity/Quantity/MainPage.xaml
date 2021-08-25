@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quantity.MainPage">
+
+    <StackLayout VerticalOptions="Center">
+        <Frame BackgroundColor="#FFD600" Padding="24" CornerRadius="10" Margin="20, 0, 20, 10">
+            <Label Text="App - Quantity" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black" FontSize="36"/>
+        </Frame>
+        <StackLayout>
+            <StackLayout HorizontalOptions="Center" Margin="10">
+                <Label x:Name="lblNumber" Text="1" FontSize="48"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="-" FontSize="35" BorderWidth="1" BorderColor="Black" BackgroundColor="White" TextColor="Black" Margin="20" Clicked="Sub" WidthRequest="70"/>
+                <Button Text="+" FontSize="35" BorderWidth="1" BorderColor="Black" BackgroundColor="White" TextColor="Black" Margin="20" Clicked="Soma" WidthRequest="70"/>
+            </StackLayout>
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>
